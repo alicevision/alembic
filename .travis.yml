@@ -1,8 +1,6 @@
 language: cpp
 dist: trusty
 
-cache:
-  apt: true
 
 addons:
   apt:
@@ -135,6 +133,7 @@ script:
   - make test
 
 cache:
+  apt: true
   directories:
     - $OPENEXR_INSTALL
     - $CMAKE_INSTALL
